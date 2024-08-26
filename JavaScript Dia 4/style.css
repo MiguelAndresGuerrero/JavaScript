@@ -1,3 +1,40 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #003cff;
+}
+button{
+    border: none;
+    background-color: aqua;
+    border-radius: 20px;
+    height: 2rem;
+    cursor: pointer;
+}
+button:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: blue;
+}
+
+button[onclick*="editData"]:hover{
+    background-color: rgb(30, 255, 0);
+    color: rgb(255, 255, 255);
+}
+
+button[onclick*="deleteData"]:hover{
+    background-color: #ff0000;
+}
+
+button[onclick*="showDetails"]:hover{
+    background-color: #008CBA;
+}
+
+button[onclick*="closeDetails"]:hover{
+    background-color: #ae00ff;
+}
