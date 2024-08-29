@@ -1,5 +1,5 @@
 let data = {
-    product: [],
+    products: [],
     orders: []
 };
 
@@ -39,29 +39,34 @@ function addProduct() {
     viewProducts();
 }
 
+function deleteProduct(index){
+    data.products.splice(index, 1);
+    saveData();
+    viewProducts();
+}
+
 function viewProducts() {
     const tableBody = document.querySelector('#productTable tbody');
     tableBody.innerHTML = '';
 
-    data.products.forEach(product => {
+    data.products.forEach((product, index) => {
         const row = document.createElement('tr');
+
         row.innerHTML = `
-        <td>${product.id}</td>
-        <td>${product.name}</td>
-        <td>${product.category}</td>
-        <td>${product.price}</td>
-        <td>${product.quantityInStock}</td>
-        <td>${product.supplierId}</td>
-        <td><button onclick="deleteProduct(${product.id})">Eliminar</button></td>
-    `;
+            <td>${product.id}</td>
+            <td>${product.name}</td>
+            <td>${product.category}</td>
+            <td>${product.price}</td>
+            <td>${product.quantityInStock}</td>
+            <td>${product.supplierId}</td>
+            <td>
+                <button onclick="deleteProduct(${index})">Eliminar</button>
+                <button onclick="editProduct(${index})">Editar</button>
+            </td>
+        `;
+
         tableBody.appendChild(row);
     });
-}
-
-function deleteProduct(id) {
-    data.products = data.products.filter(p => p.id !== id);
-    saveData();
-    viewProducts();
 }
 
 function addOrder() {
@@ -94,7 +99,9 @@ function viewOrders() {
         <td>${order.quantity}</td>
         <td>${order.orderDate}</td>
         <td>${order.status}</td>
-        <td><button onclick="deleteOrder(${order.orderId})">Eliminar</button></td>
+        <td>
+            <button onclick="deleteOrder(${order.orderId})">Eliminar</button>
+        </td>
         `;
         tableBody.appendChild(row);
     });
@@ -105,6 +112,37 @@ function deleteOrder(orderId) {
     saveData();
     viewOrders();
 }
+
+function editProduct(index) {
+    const product = data.products[index];
+    document.getElementById('productId').value = product.id;
+    document.getElementById('productName').value = product.name;
+    document.getElementById('productCategory').value = product.category;
+    document.getElementById('productPrice').value = product.price;
+    document.getElementById('productQuantity').value = product.quantityInStock;
+    document.getElementById('productSupplierId').value = product.supplierId;
+
+    const form = document.getElementById('productForm');
+    form.onsubmit = function (e) {
+        e.preventDefault();
+
+        const id = parseInt(document.getElementById('productId').value);
+        const name = document.getElementById('productName').value;
+        const category = document.getElementById('productCategory').value;
+        const price = parseFloat(document.getElementById('productPrice').value);
+        const quantityInStock = parseInt(document.getElementById('productQuantity').value);
+        const supplierId = parseInt(document.getElementById('productSupplierId').value);
+
+        data.products[index] = { id, name, category, price, quantityInStock, supplierId };
+
+        saveData();
+        viewProducts();
+
+        form.reset();
+        form.onsubmit = addProduct;
+    };
+}
+
 
 function generateSalesReport() {
     const startDate = document.getElementById('reportStartDate').value;

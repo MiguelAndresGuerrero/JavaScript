@@ -60,6 +60,7 @@ a:hover {
 
 .RefrescarButon:hover {
     transition: 0.5s;
+    transform: scale(1.5);
     background-color: #00fc71;
     border: 1px solid blue;
     color: white;
@@ -74,6 +75,7 @@ a:hover {
 
 .addProductos:hover {
     transition: 0.5s;
+    transform: scale(1.5);
     border: 1px solid green;
     background-color: greenyellow;
     color: white;
@@ -87,6 +89,7 @@ a:hover {
 
 .GenerateReport:hover {
     transition: 0.5s;
+    transform: scale(1.5);
     border: 1px solid rgb(255, 0, 119);
     background-color: rgb(183, 0, 255);
     color: white;
@@ -107,7 +110,20 @@ button[onclick*="deleteOrder"] {
 button[onclick*="deleteProduct"]:hover,
 button[onclick*="deleteOrder"]:hover {
     transition: 0.5s;
+    transform: scale(1.5);
     border: 1px solid rgb(0, 0, 0);
     color: white;
     background-color: red;
+}
+
+button[onclick*="editProduct"]{
+    border: none;
+    border-radius: 20px;
+    background-color: #00fc71;
+}
+
+button[onclick*="editProduct"]:hover{
+    transition: 0.5s;
+    transform: scale(1.5);
+    border: 1px solid rgb(4, 0, 255);
 }
