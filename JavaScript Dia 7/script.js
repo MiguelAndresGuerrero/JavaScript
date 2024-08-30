@@ -32,6 +32,7 @@ function view(link) {
             `;
         }
     })
+    
     .catch(error => {
         console.error('Error al realizar la solicitud a la API:', error);
         document.getElementById("view").innerHTML = '<p>Error al cargar los datos del héroe.</p>';
