@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PokéAPI </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <img src="media/pokedex.png" alt="pokedex">
+        <div class="view" id="view">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/25.gif" alt="pokemon">
+        </div>
+            <div id="Name"></div>
+            <div id="Number"></div>
+    </div>
+    <div class="search">
+        <input type="text" id="Search" class="Busqueda" placeholder="Enter ID or Name">
+    </div>
+    <div class="boton-right">
+        <p id="Next" onclick="next()">Next ></p>
+    </div>
+    <div class="boton-left">
+        <p id="Prev" onclick="prev()">Prev <</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
