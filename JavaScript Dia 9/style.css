@@ -1,3 +1,98 @@
+<<<<<<< HEAD
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    background: linear-gradient(#6eb9f5,#ffffff);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.content{
+    text-align: center;
+}
+
+.boton-right{
+    position: relative;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 42rem;
+    background-color: gray;
+    width: 8rem;
+    height: 4rem;
+}
+
+
+.boton-left{
+    position: relative;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: -4rem;
+    margin-left: 32rem;
+    background-color: gray;
+    width: 8rem;
+    height: 4rem;
+}
+
+p{
+    margin-top: -1rem;
+}
+
+.search{
+    text-align: center;
+    margin-top: -14rem;
+    margin-right: 2rem;
+}
+
+.Busqueda{
+    width: 19rem;
+    height: 3rem;
+    border-radius: 9px;
+}
+
+.boton-left,
+.boton-right,
+button:hover{
+    cursor: pointer;
+}
+
+.Number{
+    position: absolute;
+    margin-top: -18rem;
+    margin-left: 38rem;
+}
+
+.Name{
+    position: absolute;
+    margin-top: -18rem;
+    margin-left: 42rem;
+}
+
+.view{
+    display: flex;
+    position: absolute;
+    margin-left: 33.7rem;
+    margin-top: -28.6rem;
+    justify-content: center;
+    width: 15rem;
+    height: 9rem;
+}
+
+.button{
+    background-color: #6eb9f5;
+    border: none;
+    position: relative;
+    border-radius: 20px;
+    width: 5rem;
+    height: 2rem;
+    font-size: 20px;
+    margin-top: 1rem;
+=======
 * {
     margin: 0;
     padding: 0;
@@ -80,4 +175,5 @@ p{
     width: 15rem;
     height: 9rem;
     border: 2px solid blue;
+>>>>>>> 422d1d606a5de296c698500d9ee774fec1813aa9
 }
