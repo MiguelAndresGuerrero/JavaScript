@@ -1,0 +1,76 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+}
+
+input, select { 
+    margin: 5px 0; 
+}
+
+.contenedor{
+    border: 2px solid blue;
+    border-radius: 20px;
+    width: 30rem;
+    height: 32rem;
+    margin-left: 8rem;
+}
+
+.contenedor form{
+    margin-left: 6rem;
+}
+
+.contenedor h1{
+    margin-left: 5rem;
+}
+
+.Lista{
+    position: absolute;
+    margin-top: -32rem;
+    margin-left: 45rem;
+    border: 2px solid blue;
+    border-radius: 20px;
+    width: 30rem;
+    height: 30rem;
+}
+
+.Lista h2{
+    margin-left: 8rem;
+}
+
+button{
+    margin-top: 1rem;
+    border: none;
+    background-color: rgb(0, 17, 255);
+    color: white;
+    border-radius: 20px;
+    height: 2rem;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: cadetblue;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contenedor2{
+    border: 2px solid blue;
+    width: 30rem;
+    height: 20rem;
+    margin: 4rem;
+    margin-left: 8rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.Notas{
+    border: 2px solid blue;
+    width: 30rem;
+    height: 20rem;
+    margin: 4rem;
+    margin-top: -24rem;
+    margin-left: 45rem;
+    border-radius: 20px;
+    text-align: center;
+}
