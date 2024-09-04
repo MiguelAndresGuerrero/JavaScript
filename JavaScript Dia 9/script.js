@@ -68,10 +68,7 @@ function mostrarPokemon(data) {
     document.getElementById("pokemonID").innerText = `${data.id} -`;
 
     document.getElementById("ID__pokemon").innerHTML = `
-        <p class="Altura">Altura: ${(data.height / 10).toFixed(1)} m</p>
-        <p class="Peso">Peso: ${(data.weight / 10).toFixed(1)} kg</p>
-        <p class="Type">Tipos: ${data.types.map(typeInfo => typeInfo.type.name).join(', ')}</p>
-        <audio autoply src="${data.cries.latest}"></audio>
+        <audio autoplay src="${data.cries.latest}"></audio>
     `;
 }
 
