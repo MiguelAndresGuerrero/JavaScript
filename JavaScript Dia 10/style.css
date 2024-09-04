@@ -1,3 +1,20 @@
+@font-face {
+    font-family: Fuente;
+    src: url('./Font/get_schwifty.ttf');
+}
+
+h1, h2, h3{
+    font-family: Fuente;
+    font-size: 5rem;
+}
+
+.episode-item p {
+    margin: 0;
+    font-size: 1.3rem;
+    color: black;
+}
+
+
 body{
     background-image: url('media/RickAndMorty.jpeg');
     background-size: cover;
@@ -17,8 +34,8 @@ body{
     max-width: 300px;
     max-height: 300px;
     position: absolute;
-    top: 60%;
-    left: 6%;
+    top: 40%;
+    left: 15%;
     transform: translateY(-50%) translateX(0%) scale(0);
     opacity: 0;
     transition: opacity 0.5s ease-out;
@@ -28,6 +45,10 @@ body{
 #characterImage.emerge-from-portal {
     animation: emerge 2s ease-out forwards;
     opacity: 1;
+}
+
+.emerge-from-portal{
+    margin-left: 3rem;
 }
 
 #view {
@@ -54,10 +75,11 @@ body{
     padding: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: Fuente;
 }
 
 .character-item.selected {
-    background-color: #a6cccc;
+    background-color: #a6cccc91;
     border-radius: 5px;
 }
 

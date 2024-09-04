@@ -69,7 +69,7 @@ function displayEpisode(episodes, currentEpisodeIndex) {
     let episodeHTML = `
         <div class="episode-item">
             <h4>${episode.name} (${episode.episode})</h4>
-            <p>Air Date: ${episode.air_date}</p>
+            <p class="Date">Air Date: ${episode.air_date}</p>
             <ul class="character-list"></ul>
         </div>
     `;
