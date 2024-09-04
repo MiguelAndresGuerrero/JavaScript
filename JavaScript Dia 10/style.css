@@ -57,7 +57,7 @@ body{
 }
 
 .character-item.selected {
-    background-color: #e2e2e2;
+    background-color: #a6cccc;
     border-radius: 5px;
 }
 
@@ -85,7 +85,7 @@ body{
 .episode-item p {
     margin: 0;
     font-size: 0.875rem;
-    color: #555;
+    color: black;
 }
 
 .episode-item ul {
@@ -113,7 +113,7 @@ body{
 }
 
 .character-item.selected {
-    border: 2px solid #007bff;
+    border: 2px solid #60a85f;
     padding: 5px;
 }
 
@@ -121,17 +121,32 @@ body{
     margin-right: 2rem;
 }
 
+#characterImage {
+    border: 3px solid #000;
+    border-radius: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
 @keyframes emerge {
     0% {
-        transform: translateY(-60%) translateX(0%) scale(0);
+        transform: translateY(-42%) translateX(0%) scale(0);
+        opacity: 0.4;
     }
     50% {
-        transform: translateY(-40%) translateX(50%) scale(0.5);
+        transform: translateY(-40%) translateX(50%) scale(0.4);
+        opacity: 0.6;
     }
-    70%{
+    70% {
         transform: translateY(-50%) translateX(50%) scale(0.8);
+        opacity: 0.8;
     }
     100% {
         transform: translateY(-45%) translateX(calc(36rem - 8rem)) scale(1);
+        opacity: 1;
     }
+}
+
+.emerge-from-portal {
+    animation: emerge 2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
