@@ -150,3 +150,7 @@ body{
 .emerge-from-portal {
     animation: emerge 2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
+
+tr{
+    opacity: 0.6;
+}
