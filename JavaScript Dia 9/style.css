@@ -2,7 +2,7 @@
     margin: 0;
     padding: 5px;
     box-sizing: border-box;
-    font-family: 'Oxanium', cursive;
+    font-family: 'Oxanium',cursive;
 }
 
 body {
@@ -88,13 +88,13 @@ body {
 #nombre__pokemon {
     position: absolute;
     margin-top: -19rem;
-    margin-left: 47%;
+    margin-left: 46%;
 }
 
 #ID__pokemon {
     position: absolute;
     margin-top: -9rem;
-    margin-left: 43%;
+    margin-left: 44%;
     font-size: 20px;
 }
 

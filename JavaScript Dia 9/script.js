@@ -65,7 +65,7 @@ function mostrarPokemon(data) {
     document.getElementById("Search").value = data.id;
     document.getElementById("nombre__pokemon").innerHTML = `<h2>${data.name.toUpperCase()}</h2>`;
     document.getElementById("img__pokemon").src = data.sprites.other.showdown.front_default;    
-    document.getElementById("pokemonID").innerText = `ID: ${data.id}`;
+    document.getElementById("pokemonID").innerText = `${data.id} -`;
 
     document.getElementById("ID__pokemon").innerHTML = `
         <p class="Altura">Altura: ${(data.height / 10).toFixed(1)} m</p>
