@@ -1,0 +1,64 @@
+.Universal{
+    display: flex;
+}
+
+.content1{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 60%;
+    left: 26%;
+    margin-top: 10%;
+    z-index: 3;
+    border-radius: 10px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.content2{
+    position: absolute;
+    border-bottom: 1px solid rgb(196, 190, 190);
+    background-color: rgba(238, 238, 238, 0.774);
+    width: 50%;
+    height: 20%;
+    margin-top: 10%;
+    left: 26%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    z-index: 4;
+}
+
+.univers1{
+    position: absolute;
+    width: 99.9%;
+    height: 50%;
+    background-color: rgb(49, 46, 46);
+}
+
+.univers2{
+    margin-top: 19.8rem;
+    position: absolute;
+    width: 99.9%;
+    height: 50%;
+    background-color: rgb(236, 230, 230);
+}
+
+#circle{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 50%;
+    z-index: 10;
+    margin-top: 11%;
+    margin-left: 45%;
+}
+
+#view{
+    border: 2px solid aqua;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
