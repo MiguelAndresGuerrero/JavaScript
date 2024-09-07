@@ -42,7 +42,8 @@ fetch(URL)
 
                 const infoType = item.getAttribute('data-info');
                 const infoValue = item.getAttribute('data-value');
-                document.getElementById('info-display').innerText = `${infoType}${infoValue}`;
+                document.getElementById('info-display').innerText = `${infoType}`;
+                document.getElementById('info-display').innerText = `${infoValue}`;
 
                 const img = item.querySelector('img');
                 
