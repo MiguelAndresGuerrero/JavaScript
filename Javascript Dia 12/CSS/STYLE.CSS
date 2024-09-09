@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to right, gray,black);
+    background: linear-gradient(to right, #5c6368,#192938);
 }
 h1{
     margin-top: 130px;
@@ -37,14 +37,14 @@ input{
     padding-left: 13px;
     padding-right: 350px;
 }
-button{
+#addTaskButton{
     position: absolute;
     font-size: 20px;
     border-color: white;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding-top: 13px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 12px;
 }
@@ -106,7 +106,6 @@ button{
     background-color: black;
     border-radius: 30px;
     max-width: 80%;
-    opacity: 0.50;
 }
 
 .botones{

@@ -5,7 +5,7 @@ function search_Id() {
         return;
     }
 
-    let URL = `https://swapi.dev/api/people/${search}/`;
+    let URL = `https://swapi.py4e.com/api/people/${search}/`;
 
 
     fetch(URL)
